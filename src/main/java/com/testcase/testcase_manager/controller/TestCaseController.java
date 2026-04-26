@@ -9,7 +9,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/testcases")
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = {
+        "http://localhost:3000",
+        "https://testcase-manager-frontend.vercel.app"
+})
 public class TestCaseController {
 
     @Autowired
